@@ -16,9 +16,12 @@ export function Hero() {
               with code and AI.
             </p>
           </div>
-          <p className={styles.subtitle}>
-            Here are some of the things I am building right now
-          </p>
+        </div>
+        <div className={styles.transitionText}>
+          <span className={styles.arrow}>↓</span>
+          <span className={styles.label}>
+            Here's what I'm currently building
+          </span>
         </div>
       </Container>
     </section>

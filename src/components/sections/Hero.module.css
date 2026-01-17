@@ -53,14 +53,24 @@
   background-clip: text;
 }
 
-.subtitle {
+.transitionText {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  margin-top: var(--space-4xl);
+}
+
+.arrow {
   font-size: var(--font-size-xl);
+  color: var(--color-text-light);
+}
+
+.label {
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
   color: var(--color-text-muted);
-  font-weight: 400;
-  margin-top: var(--space-2xl);
-  padding-top: var(--space-lg);
-  border-top: 2px solid var(--color-border);
-  display: inline-block;
 }
 
 /* Mobile responsive */
@@ -85,8 +95,8 @@
     font-size: var(--font-size-xl);
   }
 
-  .subtitle {
-    font-size: var(--font-size-base);
+  .transitionText {
+    margin-top: var(--space-3xl);
   }
 }
 
@@ -104,5 +114,12 @@
 @media (min-width: 1024px) {
   .name {
     font-size: 8rem;
+  }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .arrow {
+    animation: none;
   }
 }

@@ -31,7 +31,7 @@ export const siteConfig = {
         },
         {
             name: "HookScript",
-            description: "A domain-specific programming language designed to make data more accessible and easier to share.",
+            description: "A domain-specific programming language designed to make data more accessible and easier to share",
             url: "https://www.hookscript.datahook.ca/tour/welcome/",
             highlight: false,
             lineHeight: "normal",
