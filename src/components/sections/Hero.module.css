@@ -27,6 +27,15 @@
   letter-spacing: -0.03em;
 }
 
+.name {
+  font-size: 6rem;
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom: var(--space-xl);
+  letter-spacing: -0.03em;
+  position: relative;
+}
+
 .gradientText {
   background: var(--gradient-text);
   -webkit-background-clip: text;

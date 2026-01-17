@@ -14,9 +14,11 @@
   align-items: flex-start;
   gap: var(--space-lg);
   padding: var(--space-xl) 0;
-  border-bottom: 1px solid var(--color-border-light);
   max-width: 80%;
   text-align: left;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
 }
 
 .projectCard:last-child {
@@ -35,6 +37,32 @@
   letter-spacing: -0.02em;
 }
 
+.projectNameText {
+  position: relative;
+  display: inline;
+  font-weight: 700;
+  background: linear-gradient(135deg, #0ea5e9 0%, #6366f1 50%, #a855f7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  --underline-offset: -60px; /* Default value */
+}
+
+.projectNameText::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: var(--underline-offset);
+  width: 0;
+  height: 2px;
+  background: linear-gradient(135deg, #0ea5e9 0%, #6366f1 50%, #a855f7 100%);
+  transition: width var(--transition-normal);
+}
+
+.projectCard:hover .projectNameText::after {
+  width: 100%;
+}
+
 .projectDescription {
   font-size: var(--font-size-lg);
   color: var(--color-text-muted);
@@ -44,10 +72,6 @@
 
 /* Mobile responsive */
 @media (max-width: 639px) {
-  .projects {
-    /* padding: var(--space-2xl) 0 var(--space-3xl); */
-  }
-
   .projectList {
     gap: var(--space-2xl);
   }

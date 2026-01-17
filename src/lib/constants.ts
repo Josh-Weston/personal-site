@@ -17,10 +17,11 @@ export const siteConfig = {
     projects: [
         {
             name: "Noodlr.ai",
-            description: "An online application for building and running AI models directly in your browser",
+            description: "A no-install web application for building and running AI models directly in your browser",
             url: "https://noodlr.ai/",
             highlight: true,
             lineHeight: "tight",
+            underlineOffset: "-2px", // Custom underline position
         },
         {
             name: "Trigger",
@@ -28,6 +29,7 @@ export const siteConfig = {
             url: "https://trigger.joshweston.ca/",
             highlight: false,
             lineHeight: "normal",
+            underlineOffset: "-8px", // Default position
         },
         {
             name: "HookScript",
@@ -35,6 +37,7 @@ export const siteConfig = {
             url: "https://www.hookscript.datahook.ca/tour/welcome/",
             highlight: false,
             lineHeight: "normal",
+            underlineOffset: "-8px", // Default position
         },
     ],
 };

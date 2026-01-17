@@ -13,7 +13,7 @@
   bottom: -4px;
   width: 0;
   height: 2px;
-  background: var(--gradient-text);
+  background: var(--color-accent);
   transition: width var(--transition-normal);
 }
 
@@ -24,23 +24,15 @@
 /* Default variant - used for Connect section */
 .default {
   font-weight: 700;
-  background: var(--gradient-text);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--color-accent);
 }
 
 /* Project variant - different gradient, no bold on hover */
 .project {
   font-weight: 700;
-  background: linear-gradient(135deg, #0ea5e9 0%, #6366f1 50%, #a855f7 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-}
-
-.project::after {
-  background: linear-gradient(135deg, #0ea5e9 0%, #6366f1 50%, #a855f7 100%);
 }
 
 /* Subtle variant */
