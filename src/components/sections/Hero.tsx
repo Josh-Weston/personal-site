@@ -1,0 +1,26 @@
+import { Container } from "@/components/ui";
+import styles from "./Hero.module.css";
+
+export function Hero() {
+  return (
+    <section className={styles.hero}>
+      <Container>
+        <div className={styles.content}>
+          <p className={styles.greeting}>👋 Hey, I&apos;m</p>
+          <h1 className={styles.name}>
+            <span className={styles.gradientText}>Josh</span>
+          </h1>
+          <div className={styles.tagline}>
+            <p className={styles.taglineText}>
+              I like to <span className={styles.highlight}>build</span> things
+              with code and AI.
+            </p>
+          </div>
+          <p className={styles.subtitle}>
+            Here are some of the things I am building right now
+          </p>
+        </div>
+      </Container>
+    </section>
+  );
+}
