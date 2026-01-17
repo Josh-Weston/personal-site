@@ -24,7 +24,7 @@ export const siteConfig = {
             underlineOffset: "-2px", // Custom underline position
         },
         {
-            name: "Trigger",
+            name: "Trigger.js",
             description: "A data-oriented state management library developed for React and TypeScript",
             url: "https://trigger.joshweston.ca/",
             highlight: false,

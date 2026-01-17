@@ -12,8 +12,9 @@ export function Hero() {
           </h1>
           <div className={styles.tagline}>
             <p className={styles.taglineText}>
-              I like to <span className={styles.highlight}>build</span> things
-              with code and AI.
+              I live in Halifax, Canada 🍁 and I like to{" "}
+              <span className={styles.highlight}>build</span> things with code
+              and AI.
             </p>
           </div>
         </div>
