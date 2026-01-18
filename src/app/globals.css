@@ -67,6 +67,8 @@
 
 html {
   scroll-behavior: smooth;
+  min-height: 100vh; /* Fallback for browsers that do not support dVh */
+  min-height: 100dvh;
 }
 
 body {
@@ -92,7 +94,7 @@ body {
       transparent 70%
     );
   background-attachment: fixed;
-  min-height: 100dvh;
+  min-height: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
