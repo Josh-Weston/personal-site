@@ -44,8 +44,7 @@ This is a personal website for Josh Weston, built as a minimalist, single-page a
 ### Visual Elements
 
 - **Allowed**: Borders, dividers, headers, horizontal rules, typographic treatments, background shapes to accent areas
-- **Not Allowed**: Images, icons, emojis, decorative graphics
-- **Effects**: Parallax scrolling for depth and engagement
+- **Not Allowed**: Images
 
 ### Responsive Design
 

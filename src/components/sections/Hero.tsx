@@ -12,7 +12,7 @@ export function Hero() {
           </h1>
           <div className={styles.tagline}>
             <p className={styles.taglineText}>
-              I live in Halifax, Canada 🍁 and I like to{" "}
+              I live in Halifax, Canada 🍁 and I{" "}
               <span className={styles.highlight}>build</span> things with code
               and AI.
             </p>

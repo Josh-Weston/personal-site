@@ -92,7 +92,7 @@ body {
       transparent 70%
     );
   background-attachment: fixed;
-  min-height: 100vh;
+  min-height: 100dvh;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -110,31 +110,10 @@ a {
   background-clip: text;
 }
 
-/* Parallax Container */
-.parallax-wrapper {
-  perspective: 1px;
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto;
-}
-
-.parallax-section {
-  position: relative;
-  transform-style: preserve-3d;
-}
-
 /* Reduced motion support */
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
-  }
-
-  .parallax-wrapper {
-    perspective: none;
-  }
-
-  .parallax-section {
-    transform: none !important;
   }
 }
 
